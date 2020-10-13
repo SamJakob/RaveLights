@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39EDC3CA2534FE4100F86BD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EDC3C92534FE4100F86BD8 /* AppDelegate.m */; };
+		39EDC3CD2534FE4100F86BD8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EDC3CC2534FE4100F86BD8 /* ViewController.m */; };
+		39EDC3CF2534FE4400F86BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EDC3CE2534FE4400F86BD8 /* Assets.xcassets */; };
+		39EDC3D22534FE4400F86BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EDC3D02534FE4400F86BD8 /* Main.storyboard */; };
+		39EDC3D52534FE4400F86BD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EDC3D42534FE4400F86BD8 /* main.m */; };
+		39EDC3E02534FE4400F86BD8 /* RaveLightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EDC3DF2534FE4400F86BD8 /* RaveLightsTests.m */; };
+		39EDC3EB2534FE4400F86BD8 /* RaveLightsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EDC3EA2534FE4400F86BD8 /* RaveLightsUITests.m */; };
+		39EDC3FD253501C200F86BD8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39EDC3FC253501C200F86BD8 /* AVFoundation.framework */; };
+		39EDC40325350AD600F86BD8 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EDC40225350AD600F86BD8 /* Client.m */; };
+		39EDC4082535BC6500F86BD8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 39EDC4072535BC6500F86BD8 /* Podfile */; };
+		39EDC41F2535CC1600F86BD8 /* link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDC41E2535CC1600F86BD8 /* link.swift */; };
+		57E523F76B6021D69108FD81 /* libPods-RaveLights.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1AA8287AB437F41FB41679 /* libPods-RaveLights.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39EDC3DC2534FE4400F86BD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39EDC3BD2534FE4100F86BD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39EDC3C42534FE4100F86BD8;
+			remoteInfo = RaveLights;
+		};
+		39EDC3E72534FE4400F86BD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39EDC3BD2534FE4100F86BD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39EDC3C42534FE4100F86BD8;
+			remoteInfo = RaveLights;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39EDC3C52534FE4100F86BD8 /* RaveLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaveLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39EDC3C82534FE4100F86BD8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		39EDC3C92534FE4100F86BD8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		39EDC3CB2534FE4100F86BD8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		39EDC3CC2534FE4100F86BD8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		39EDC3CE2534FE4400F86BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39EDC3D12534FE4400F86BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39EDC3D32534FE4400F86BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39EDC3D42534FE4400F86BD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39EDC3D62534FE4400F86BD8 /* RaveLights.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RaveLights.entitlements; sourceTree = "<group>"; };
+		39EDC3DB2534FE4400F86BD8 /* RaveLightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaveLightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39EDC3DF2534FE4400F86BD8 /* RaveLightsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaveLightsTests.m; sourceTree = "<group>"; };
+		39EDC3E12534FE4400F86BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39EDC3E62534FE4400F86BD8 /* RaveLightsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaveLightsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39EDC3EA2534FE4400F86BD8 /* RaveLightsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaveLightsUITests.m; sourceTree = "<group>"; };
+		39EDC3EC2534FE4400F86BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39EDC3FC253501C200F86BD8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		39EDC40125350AD600F86BD8 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		39EDC40225350AD600F86BD8 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+		39EDC4072535BC6500F86BD8 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		39EDC41D2535CC1600F86BD8 /* RaveLights-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaveLights-Bridging-Header.h"; sourceTree = "<group>"; };
+		39EDC41E2535CC1600F86BD8 /* link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = link.swift; sourceTree = "<group>"; };
+		3E1AA8287AB437F41FB41679 /* libPods-RaveLights.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RaveLights.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89B916F03E52043D1FD915F2 /* Pods-RaveLights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaveLights.debug.xcconfig"; path = "Target Support Files/Pods-RaveLights/Pods-RaveLights.debug.xcconfig"; sourceTree = "<group>"; };
+		FD9E1C2AACABD16B526178CF /* Pods-RaveLights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaveLights.release.xcconfig"; path = "Target Support Files/Pods-RaveLights/Pods-RaveLights.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39EDC3C22534FE4100F86BD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39EDC3FD253501C200F86BD8 /* AVFoundation.framework in Frameworks */,
+				57E523F76B6021D69108FD81 /* libPods-RaveLights.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39EDC3D82534FE4400F86BD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39EDC3E32534FE4400F86BD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39EDC3BC2534FE4100F86BD8 = {
+			isa = PBXGroup;
+			children = (
+				39EDC4072535BC6500F86BD8 /* Podfile */,
+				39EDC3C72534FE4100F86BD8 /* RaveLights */,
+				39EDC3DE2534FE4400F86BD8 /* RaveLightsTests */,
+				39EDC3E92534FE4400F86BD8 /* RaveLightsUITests */,
+				39EDC3C62534FE4100F86BD8 /* Products */,
+				39EDC3FB253501C100F86BD8 /* Frameworks */,
+				593DA68E4C2B6014FD32ACEE /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		39EDC3C62534FE4100F86BD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39EDC3C52534FE4100F86BD8 /* RaveLights.app */,
+				39EDC3DB2534FE4400F86BD8 /* RaveLightsTests.xctest */,
+				39EDC3E62534FE4400F86BD8 /* RaveLightsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39EDC3C72534FE4100F86BD8 /* RaveLights */ = {
+			isa = PBXGroup;
+			children = (
+				39EDC40125350AD600F86BD8 /* Client.h */,
+				39EDC40225350AD600F86BD8 /* Client.m */,
+				39EDC3C82534FE4100F86BD8 /* AppDelegate.h */,
+				39EDC3C92534FE4100F86BD8 /* AppDelegate.m */,
+				39EDC3CB2534FE4100F86BD8 /* ViewController.h */,
+				39EDC3CC2534FE4100F86BD8 /* ViewController.m */,
+				39EDC3CE2534FE4400F86BD8 /* Assets.xcassets */,
+				39EDC3D02534FE4400F86BD8 /* Main.storyboard */,
+				39EDC3D32534FE4400F86BD8 /* Info.plist */,
+				39EDC3D42534FE4400F86BD8 /* main.m */,
+				39EDC3D62534FE4400F86BD8 /* RaveLights.entitlements */,
+				39EDC41E2535CC1600F86BD8 /* link.swift */,
+				39EDC41D2535CC1600F86BD8 /* RaveLights-Bridging-Header.h */,
+			);
+			path = RaveLights;
+			sourceTree = "<group>";
+		};
+		39EDC3DE2534FE4400F86BD8 /* RaveLightsTests */ = {
+			isa = PBXGroup;
+			children = (
+				39EDC3DF2534FE4400F86BD8 /* RaveLightsTests.m */,
+				39EDC3E12534FE4400F86BD8 /* Info.plist */,
+			);
+			path = RaveLightsTests;
+			sourceTree = "<group>";
+		};
+		39EDC3E92534FE4400F86BD8 /* RaveLightsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				39EDC3EA2534FE4400F86BD8 /* RaveLightsUITests.m */,
+				39EDC3EC2534FE4400F86BD8 /* Info.plist */,
+			);
+			path = RaveLightsUITests;
+			sourceTree = "<group>";
+		};
+		39EDC3FB253501C100F86BD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39EDC3FC253501C200F86BD8 /* AVFoundation.framework */,
+				3E1AA8287AB437F41FB41679 /* libPods-RaveLights.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		593DA68E4C2B6014FD32ACEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89B916F03E52043D1FD915F2 /* Pods-RaveLights.debug.xcconfig */,
+				FD9E1C2AACABD16B526178CF /* Pods-RaveLights.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39EDC3C42534FE4100F86BD8 /* RaveLights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39EDC3EF2534FE4400F86BD8 /* Build configuration list for PBXNativeTarget "RaveLights" */;
+			buildPhases = (
+				EDC28BE19FD310BA97081558 /* [CP] Check Pods Manifest.lock */,
+				BE571165F52862C41B0611F3 /* [CP] Prepare Artifacts */,
+				39EDC3C12534FE4100F86BD8 /* Sources */,
+				39EDC3C22534FE4100F86BD8 /* Frameworks */,
+				39EDC3C32534FE4100F86BD8 /* Resources */,
+				81B9F7B743AF43D4FE6CE933 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaveLights;
+			productName = RaveLights;
+			productReference = 39EDC3C52534FE4100F86BD8 /* RaveLights.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39EDC3DA2534FE4400F86BD8 /* RaveLightsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39EDC3F22534FE4400F86BD8 /* Build configuration list for PBXNativeTarget "RaveLightsTests" */;
+			buildPhases = (
+				39EDC3D72534FE4400F86BD8 /* Sources */,
+				39EDC3D82534FE4400F86BD8 /* Frameworks */,
+				39EDC3D92534FE4400F86BD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39EDC3DD2534FE4400F86BD8 /* PBXTargetDependency */,
+			);
+			name = RaveLightsTests;
+			productName = RaveLightsTests;
+			productReference = 39EDC3DB2534FE4400F86BD8 /* RaveLightsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		39EDC3E52534FE4400F86BD8 /* RaveLightsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39EDC3F52534FE4400F86BD8 /* Build configuration list for PBXNativeTarget "RaveLightsUITests" */;
+			buildPhases = (
+				39EDC3E22534FE4400F86BD8 /* Sources */,
+				39EDC3E32534FE4400F86BD8 /* Frameworks */,
+				39EDC3E42534FE4400F86BD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39EDC3E82534FE4400F86BD8 /* PBXTargetDependency */,
+			);
+			name = RaveLightsUITests;
+			productName = RaveLightsUITests;
+			productReference = 39EDC3E62534FE4400F86BD8 /* RaveLightsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39EDC3BD2534FE4100F86BD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					39EDC3C42534FE4100F86BD8 = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+					39EDC3DA2534FE4400F86BD8 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 39EDC3C42534FE4100F86BD8;
+					};
+					39EDC3E52534FE4400F86BD8 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 39EDC3C42534FE4100F86BD8;
+					};
+				};
+			};
+			buildConfigurationList = 39EDC3C02534FE4100F86BD8 /* Build configuration list for PBXProject "RaveLights" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39EDC3BC2534FE4100F86BD8;
+			productRefGroup = 39EDC3C62534FE4100F86BD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39EDC3C42534FE4100F86BD8 /* RaveLights */,
+				39EDC3DA2534FE4400F86BD8 /* RaveLightsTests */,
+				39EDC3E52534FE4400F86BD8 /* RaveLightsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39EDC3C32534FE4100F86BD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39EDC4082535BC6500F86BD8 /* Podfile in Resources */,
+				39EDC3CF2534FE4400F86BD8 /* Assets.xcassets in Resources */,
+				39EDC3D22534FE4400F86BD8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39EDC3D92534FE4400F86BD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39EDC3E42534FE4400F86BD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81B9F7B743AF43D4FE6CE933 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RaveLights/Pods-RaveLights-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RaveLights/Pods-RaveLights-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RaveLights/Pods-RaveLights-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE571165F52862C41B0611F3 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RaveLights/Pods-RaveLights-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RaveLights/Pods-RaveLights-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RaveLights/Pods-RaveLights-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDC28BE19FD310BA97081558 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RaveLights-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39EDC3C12534FE4100F86BD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39EDC41F2535CC1600F86BD8 /* link.swift in Sources */,
+				39EDC3CD2534FE4100F86BD8 /* ViewController.m in Sources */,
+				39EDC3D52534FE4400F86BD8 /* main.m in Sources */,
+				39EDC40325350AD600F86BD8 /* Client.m in Sources */,
+				39EDC3CA2534FE4100F86BD8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39EDC3D72534FE4400F86BD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39EDC3E02534FE4400F86BD8 /* RaveLightsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39EDC3E22534FE4400F86BD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39EDC3EB2534FE4400F86BD8 /* RaveLightsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39EDC3DD2534FE4400F86BD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39EDC3C42534FE4100F86BD8 /* RaveLights */;
+			targetProxy = 39EDC3DC2534FE4400F86BD8 /* PBXContainerItemProxy */;
+		};
+		39EDC3E82534FE4400F86BD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39EDC3C42534FE4100F86BD8 /* RaveLights */;
+			targetProxy = 39EDC3E72534FE4400F86BD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39EDC3D02534FE4400F86BD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39EDC3D12534FE4400F86BD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39EDC3ED2534FE4400F86BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		39EDC3EE2534FE4400F86BD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		39EDC3F02534FE4400F86BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89B916F03E52043D1FD915F2 /* Pods-RaveLights.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RaveLights/RaveLights.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QNA263HPUW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = RaveLights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samjakob.RaveLights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RaveLights/RaveLights-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		39EDC3F12534FE4400F86BD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD9E1C2AACABD16B526178CF /* Pods-RaveLights.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RaveLights/RaveLights.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QNA263HPUW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = RaveLights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samjakob.RaveLights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RaveLights/RaveLights-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		39EDC3F32534FE4400F86BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QNA263HPUW;
+				INFOPLIST_FILE = RaveLightsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samjakob.RaveLightsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaveLights.app/Contents/MacOS/RaveLights";
+			};
+			name = Debug;
+		};
+		39EDC3F42534FE4400F86BD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QNA263HPUW;
+				INFOPLIST_FILE = RaveLightsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samjakob.RaveLightsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaveLights.app/Contents/MacOS/RaveLights";
+			};
+			name = Release;
+		};
+		39EDC3F62534FE4400F86BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QNA263HPUW;
+				INFOPLIST_FILE = RaveLightsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samjakob.RaveLightsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RaveLights;
+			};
+			name = Debug;
+		};
+		39EDC3F72534FE4400F86BD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QNA263HPUW;
+				INFOPLIST_FILE = RaveLightsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samjakob.RaveLightsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RaveLights;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39EDC3C02534FE4100F86BD8 /* Build configuration list for PBXProject "RaveLights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39EDC3ED2534FE4400F86BD8 /* Debug */,
+				39EDC3EE2534FE4400F86BD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39EDC3EF2534FE4400F86BD8 /* Build configuration list for PBXNativeTarget "RaveLights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39EDC3F02534FE4400F86BD8 /* Debug */,
+				39EDC3F12534FE4400F86BD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39EDC3F22534FE4400F86BD8 /* Build configuration list for PBXNativeTarget "RaveLightsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39EDC3F32534FE4400F86BD8 /* Debug */,
+				39EDC3F42534FE4400F86BD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39EDC3F52534FE4400F86BD8 /* Build configuration list for PBXNativeTarget "RaveLightsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39EDC3F62534FE4400F86BD8 /* Debug */,
+				39EDC3F72534FE4400F86BD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39EDC3BD2534FE4100F86BD8 /* Project object */;
+}
