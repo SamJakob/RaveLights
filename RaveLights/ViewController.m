@@ -61,7 +61,7 @@
                 [this log:[@"Port: /dev/" stringByAppendingString:this->_serialPort.stringValue]];
                 
                 [this log:@"Connection is ready!"];
-                [this log:[NSString stringWithFormat:@"Controller reports that it does not give a fuck about the length of the LED array."]];
+                [this log:[NSString stringWithFormat:@"Controller reports that it does not care about the length of the LED array."]];
                 
             }];
             

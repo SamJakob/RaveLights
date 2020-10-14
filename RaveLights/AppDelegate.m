@@ -22,7 +22,7 @@ NSOperationQueue* queue;
     
     NSLog(@"Preparing to read audio data...");
     [AKSettings setAudioInputEnabled:true];
-    [AKSettings setSampleRate:48000];
+    [AKSettings setSampleRate:44100];
     
     NSError *error;
     
@@ -67,9 +67,11 @@ NSOperationQueue* queue;
 - (void)timerTicked:(NSTimer*) timer {
     
     void (^block)(void) = ^{
-        if (self->freqTracker.amplitude > 0.05) {
+        if (true || self->freqTracker.amplitude > 0.01) {
             if (self->freqTracker.frequency <= 1500) {
                 [self dispatchFrequency:round(self->freqTracker.frequency)];
+                
+                // [self dispatchFrequency:round(self->freqTracker.frequency)];
             }
         }
     };
@@ -86,7 +88,7 @@ uint16_t prevFreq = 0;
         if (frequency != prevFreq) {
             NSLog(@"%d", frequency);
             
-            uint8_t mappedFrequency = [self map:frequency fromMax:1500 toMax:255];
+            uint8_t mappedFrequency = [self map:frequency fromMax:300 toMax:255];
             [client writeData:[NSData dataWithBytes:&mappedFrequency length:1]];
             
             prevFreq = frequency;

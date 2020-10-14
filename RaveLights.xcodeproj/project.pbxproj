@@ -190,9 +190,11 @@
 			buildConfigurationList = 39EDC3EF2534FE4400F86BD8 /* Build configuration list for PBXNativeTarget "RaveLights" */;
 			buildPhases = (
 				EDC28BE19FD310BA97081558 /* [CP] Check Pods Manifest.lock */,
+				E776C5027D0DCFDB0B6FB654 /* [CP] Prepare Artifacts */,
 				39EDC3C12534FE4100F86BD8 /* Sources */,
 				39EDC3C22534FE4100F86BD8 /* Frameworks */,
 				39EDC3C32534FE4100F86BD8 /* Resources */,
+				16BFAEF0C9EE8BEEE3DEF1BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,6 +311,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		16BFAEF0C9EE8BEEE3DEF1BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RaveLights/Pods-RaveLights-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RaveLights/Pods-RaveLights-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RaveLights/Pods-RaveLights-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E776C5027D0DCFDB0B6FB654 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RaveLights/Pods-RaveLights-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RaveLights/Pods-RaveLights-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RaveLights/Pods-RaveLights-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EDC28BE19FD310BA97081558 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
