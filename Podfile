@@ -3,4 +3,5 @@ workspace 'RaveLights'
 
 target 'RaveLights' do
     pod 'AudioKit/Core'
+    pod "ORSSerialPort"
 end

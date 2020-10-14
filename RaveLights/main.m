@@ -11,11 +11,15 @@
 int main(int argc, const char * argv[]) {
     
     @autoreleasepool {
-        dispatch_group_t permission = dispatch_group_create();
-        dispatch_group_enter(permission);
+        // dispatch_group_t permission = dispatch_group_create();
+        // dispatch_group_enter(permission);
         
         NSLog(@"Requesting authorization for audio capture...");
-        __block BOOL authorizationGranted = FALSE;
+        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeAudio completionHandler:^(BOOL granted) {
+            NSLog(@"Granted!");
+        }];
+        
+        /*__block BOOL authorizationGranted = FALSE;
         
         switch([AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeAudio]) {
                 case AVAuthorizationStatusAuthorized:
@@ -48,7 +52,7 @@ int main(int argc, const char * argv[]) {
         dispatch_group_wait(permission, DISPATCH_TIME_FOREVER);
         if (!authorizationGranted) {
             return -1;
-        }
+        }*/
     }
     
     return NSApplicationMain(argc, argv);

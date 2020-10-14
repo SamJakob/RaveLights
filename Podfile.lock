@@ -1,16 +1,20 @@
 PODS:
   - AudioKit/Core (4.11.2)
+  - ORSSerialPort (2.1)
 
 DEPENDENCIES:
   - AudioKit/Core
+  - ORSSerialPort
 
 SPEC REPOS:
   trunk:
     - AudioKit
+    - ORSSerialPort
 
 SPEC CHECKSUMS:
   AudioKit: 57cc61d708f085763a031e5c3f87adae21dc4b59
+  ORSSerialPort: d2d5d131797453430c557ba8dc7dcbcae20ff2e5
 
-PODFILE CHECKSUM: 54bed1ea885060729b9beb44aede6a87a467b056
+PODFILE CHECKSUM: bdabb3d209bd6dbda175fd46d29234f5eeded008
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0.rc.1

@@ -6,18 +6,21 @@
 //
 
 #import <Cocoa/Cocoa.h>
+
 #import "Client.h"
 
-@interface ViewController : NSViewController {
-    @private
-        /// The socket client to connect to.
-        Client* client;
-}
+#import "SerialClient.h"
+#import "TCPClient.h"
+
+@interface ViewController : NSViewController
 
 @property (strong) IBOutlet NSTextField* hostname;
 @property (strong) IBOutlet NSTextField* port;
 
+@property (strong) IBOutlet NSTextField* serialPort;
+
 @property (strong) IBOutlet NSTextView* console;
+@property (strong) IBOutlet NSTabView* connectionTabView;
 
 - (IBAction)onConnectClick:(NSButton *)sender;
 - (void) log:(NSString*) data;

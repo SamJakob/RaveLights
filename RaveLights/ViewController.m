@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @implementation ViewController
 
@@ -24,6 +25,8 @@
 
 - (IBAction)onConnectClick:(NSButton *)sender {
     
+    AppDelegate* appDelegate = [[NSApplication sharedApplication] delegate];
+    
     __block ViewController* this = self;
     BOOL isConnecting = sender.state == NSControlStateValueOn;
     
@@ -33,32 +36,52 @@
         
         [self log:@"Connecting to server..."];
         
-        client = [[Client alloc] init:self->_port.intValue withAddress:self->_hostname.stringValue];
-        
-        [client setOnAck:^(int ledCount){
+        if ([_connectionTabView.selectedTabViewItem.identifier isEqual:@"tcpSocket"]) {
             
-            [this log:[@"Hostname: " stringByAppendingString:this->_hostname.stringValue]];
-            [this log:[@"Port: " stringByAppendingString:this->_port.stringValue]];
+            appDelegate->client = [[TCPClient alloc] init:self->_port.intValue withAddress:self->_hostname.stringValue];
             
-            [this log:@"Connection is ready!"];
-            [this log:[NSString stringWithFormat:@"Controller reports a %d led array.", ledCount]];
-        }];
+            [appDelegate->client setOnAck:^(int ledCount){
+                
+                [this log:@"Protocol: TCP Socket"];
+                [this log:[@"Hostname: " stringByAppendingString:this->_hostname.stringValue]];
+                [this log:[@"Port: " stringByAppendingString:this->_port.stringValue]];
+                
+                [this log:@"Connection is ready!"];
+                [this log:[NSString stringWithFormat:@"Controller reports a %d led array.", ledCount]];
+                
+            }];
+            
+        } else if ([_connectionTabView.selectedTabViewItem.identifier isEqual:@"usbSerial"]) {
+            
+            appDelegate->client = [[SerialClient alloc] init:this->_serialPort.stringValue];
+            
+            [appDelegate->client setOnAck:^(int ledCount) {
+                
+                [this log:@"Protocol: USB Serial"];
+                [this log:[@"Port: /dev/" stringByAppendingString:this->_serialPort.stringValue]];
+                
+                [this log:@"Connection is ready!"];
+                [this log:[NSString stringWithFormat:@"Controller reports that it does not give a fuck about the length of the LED array."]];
+                
+            }];
+            
+        }
         
-        [client start];
-        [client write:@"$HANDSHAKE"];
+        [appDelegate->client start];
+        [appDelegate->client write:@"$HANDSHAKE"];
         
         dispatch_group_t lightDispatch = dispatch_group_create();
         dispatch_group_async(lightDispatch, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             
             // TODO: Get audio data.
-            [self->client write:@"!255"];
+            [appDelegate->client write:@"!-1"];
             
         });
     } else {
         [self log:@"Disconnecting from server..."];
-        if (client != NULL) {
-            [client close];
-            client = NULL;
+        if (appDelegate->client != NULL) {
+            [appDelegate->client close];
+            appDelegate->client = NULL;
         }
     }
     
